@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "早鸟团",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "activity-card": "../../components/activity-card",
+    "empty-state": "../../components/empty-state"
+  }
+}

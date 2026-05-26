@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "trip-card": "../../components/trip-card",
+    "empty-state": "../../components/empty-state"
+  }
+}

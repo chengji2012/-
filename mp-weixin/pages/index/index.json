@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "潜水船宿",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "ship-card": "../../components/ship-card",
+    "empty-state": "../../components/empty-state"
+  }
+}

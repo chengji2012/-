@@ -1,0 +1,1 @@
+"use strict";const t=require("../common/vendor.js");exports.formatDate=function(r,e="YYYY-MM-DD"){return t.dayjs(r).format(e)},exports.getMinPrice=function(t){return t&&0!==t.length?function(t,r="CNY"){return"CNY"===r?`¥${t.toLocaleString()}`:`$${t.toLocaleString()}`}(Math.min(...t.map(t=>Number(t.price)))):"价格待定"};

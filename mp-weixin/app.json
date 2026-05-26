@@ -1,0 +1,91 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/groupbuy-list/list",
+    "pages/profile/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pages-detail",
+      "pages": [
+        "ship-detail/detail",
+        "groupbuy-detail/detail"
+      ],
+      "name": "detail"
+    },
+    {
+      "root": "pages-user",
+      "pages": [
+        "login/index",
+        "inquiry/index"
+      ],
+      "name": "user"
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "潜水船宿",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F6FA"
+  },
+  "tabBar": {
+    "color": "#9CA3AF",
+    "selectedColor": "#0EA5E9",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "static/tabbar/search.png",
+        "selectedIconPath": "static/tabbar/search-active.png"
+      },
+      {
+        "pagePath": "pages/groupbuy-list/list",
+        "text": "早鸟团",
+        "iconPath": "static/tabbar/ticket.png",
+        "selectedIconPath": "static/tabbar/ticket-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "wifi",
+      "packages": [
+        "detail"
+      ]
+    },
+    "pages/groupbuy-list/list": {
+      "network": "wifi",
+      "packages": [
+        "detail"
+      ]
+    },
+    "pages/profile/index": {
+      "network": "wifi",
+      "packages": [
+        "user"
+      ]
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置信息"
+    }
+  },
+  "requiredPrivateInfos": [],
+  "usingComponents": {}
+}
